@@ -8,7 +8,6 @@
 #include "triangle.h"
 #include <iostream>
 
-// Utilisation de std:: devant string, cout et endl pour éviter les erreurs
 CTriangle::CTriangle() : CForme("Triangle inconnu") {
     this->hauteur = 0;
     this->base = 0;
@@ -16,7 +15,7 @@ CTriangle::CTriangle() : CForme("Triangle inconnu") {
 
 CTriangle::~CTriangle() {}
 
-// Correction de la signature avec std::string
+
 CTriangle::CTriangle(std::string nom, int _hauteur, int _base)
     : CForme(nom) {
     this->hauteur = _hauteur;
@@ -24,12 +23,11 @@ CTriangle::CTriangle(std::string nom, int _hauteur, int _base)
 }
 
 void CTriangle::afficher() {
-    // MODIFICATION PARTIE 4 : On ne peut plus appeler CForme::afficher() 
-    // car elle est virtuelle pure (= 0)
+    
     std::cout << "Nom : " << nom << " | Base : " << base << " | Hauteur : " << hauteur << std::endl;
 }
 
 double CTriangle::surface() {
-    // Calcul de la surface d'un triangle
+    
     return (base * hauteur) / 2.0;
 }

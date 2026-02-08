@@ -17,4 +17,3 @@ CForme::CForme(std::string _nom) {
 CForme::~CForme() {
 }
 
-// On ne met RIEN pour afficher() et surface() ici.

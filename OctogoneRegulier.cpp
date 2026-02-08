@@ -10,12 +10,10 @@
 #include <iostream>
 #include <string>
 
-// Constructeur par défaut
+
 COctogoneRegulier::COctogoneRegulier() : CForme("Octogone Inconnu") {
     this->cote = 0;
 }
-
-// Signature STRICTEMENT IDENTIQUE au .h pour corriger C2511
 COctogoneRegulier::COctogoneRegulier(std::string _nom, int _cote) : CForme(_nom) {
     this->cote = _cote;
 }
@@ -24,7 +22,7 @@ COctogoneRegulier::~COctogoneRegulier() {
 }
 
 void COctogoneRegulier::afficher() {
-    // Utilisation de std:: devant cout et endl pour corriger C2065
+   
     std::cout << "Nom : " << nom << " | Type : Octogone | Cote : " << cote << std::endl;
 }
 

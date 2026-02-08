@@ -17,10 +17,10 @@ public:
 	CCarre();
 	virtual ~CCarre();
 
-	// Constructeur prenant le côté
+	
 	CCarre(std::string _nom, int _cote);
 
-	// On redéfinit les méthodes pour le Carré
+	
 	void afficher() override;
 	double surface() override;
 

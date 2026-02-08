@@ -17,7 +17,7 @@ public:
 	COctogoneRegulier();
 	virtual ~COctogoneRegulier();
 
-	// Utilisation de std::string indispensable pour corriger C2061
+	
 	COctogoneRegulier(std::string _nom, int _cote);
 
 	void afficher() override;
