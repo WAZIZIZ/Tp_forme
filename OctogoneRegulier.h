@@ -5,27 +5,26 @@
 //  Original author: Enzo Mouny
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_F4AA348A_CB84_4bda_BB01_CEB429BA389A__INCLUDED_)
-#define EA_F4AA348A_CB84_4bda_BB01_CEB429BA389A__INCLUDED_
+#ifndef OCTOGONEREGULIER_H
+#define OCTOGONEREGULIER_H
 
 #include "forme.h"
+#include <string> 
 
 class COctogoneRegulier : public CForme
 {
 public:
 	COctogoneRegulier();
+	virtual ~COctogoneRegulier();
 
-	~COctogoneRegulier(); 
+	// Utilisation de std::string indispensable pour corriger C2061
+	COctogoneRegulier(std::string _nom, int _cote);
 
-	void afficher(); 
-
-	
-	COctogoneRegulier(string _nom, int _cote);
-
-	double surface(); 
+	void afficher() override;
+	double surface() override;
 
 private:
 	int cote;
 };
 
-#endif // !defined(EA_F4AA348A_CB84_4bda_BB01_CEB429BA389A__INCLUDED_)
+#endif

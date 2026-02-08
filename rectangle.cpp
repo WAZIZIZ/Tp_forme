@@ -6,22 +6,31 @@
 ///////////////////////////////////////////////////////////
 
 #include "rectangle.h"
-#include <iostream>
+#include <iostream> // Indispensable pour std::cout et std::endl
 
-CRectangle::CRectangle() : CForme("Rectangle inconnu"), largeur(0), longueur(0) {}
-
-CRectangle::CRectangle(string nom, int _largeur, int _longueur) 
-    : CForme(nom), largeur(_largeur), longueur(_longueur) {}
-
-CRectangle::~CRectangle() {}
-
-
-void CRectangle::afficher() {
-    CForme::afficher();
-    cout << "Largeur : " << largeur << " | Longueur : " << longueur << endl;
+// Constructeur par défaut
+CRectangle::CRectangle() : CForme() {
+    this->largeur = 0;
+    this->longueur = 0;
 }
 
+// Constructeur avec paramètres
+CRectangle::CRectangle(std::string _nom, int _largeur, int _longueur) : CForme(_nom) {
+    this->largeur = _largeur;
+    this->longueur = _longueur;
+}
 
+// Destructeur
+CRectangle::~CRectangle() {
+}
+
+// Implémentation de la méthode afficher
+void CRectangle::afficher() {
+    // Note : on utilise 'nom' qui est hérité de CForme
+    std::cout << "Rectangle : " << nom << " | Dim : " << largeur << "x" << longueur << std::endl;
+}
+
+// Implémentation du calcul de la surface
 double CRectangle::surface() {
     return (double)largeur * longueur;
 }

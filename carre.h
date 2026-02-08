@@ -9,27 +9,22 @@
 #define EA_CAB04089_B088_4860_A714_D5B6EA6C5D52__INCLUDED_
 
 #include "rectangle.h"
-
+#include <string>
 
 class CCarre : public CRectangle
 {
 public:
 	CCarre();
+	virtual ~CCarre();
 
-	
-	~CCarre();
+	// Constructeur prenant le côté
+	CCarre(std::string _nom, int _cote);
 
-	
-	CCarre(int _cote);
-
-	
-	void afficher();
-
-	
-	double surface();
+	// On redéfinit les méthodes pour le Carré
+	void afficher() override;
+	double surface() override;
 
 private:
-	
 	int cote;
 };
 

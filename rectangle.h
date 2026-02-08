@@ -5,29 +5,25 @@
 //  Original author: Enzo Mouny
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_E8659249_0B9C_491f_BC3B_764BEC26D8C9__INCLUDED_)
-#define EA_E8659249_0B9C_491f_BC3B_764BEC26D8C9__INCLUDED_
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
 
+#include <string>  // Ajout indispensable pour reconnaître std::string
 #include "forme.h"
 
-
-class CRectangle : public CForme
-{
+class CRectangle : public CForme {
 public:
-	CRectangle();
-	
-	CRectangle(string _nom, int _largeur, int _longueur);
+    CRectangle();
+    CRectangle(std::string _nom, int _largeur, int _longueur);
+    virtual ~CRectangle(); // virtual ajouté pour la sécurité du destructeur
 
-	 
-	~CRectangle();
-
-	
-	void afficher();
-	double surface();
+    // override confirme que tu implémentes les méthodes virtuelles pures de CForme
+    void afficher() override;
+    double surface() override;
 
 private:
-	int largeur;
-	int longueur;
+    int largeur;
+    int longueur;
 };
 
 #endif

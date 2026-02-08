@@ -10,19 +10,20 @@
 
 #include <string>
 #include <iostream>
-using namespace std;
 
 class CForme {
 public:
-    CForme();               
-    CForme(string _nom);
-    virtual ~CForme();      
+    CForme();
+    CForme(std::string _nom);
+    virtual ~CForme();
 
-    virtual void afficher();  
-    virtual double surface(); 
+    // PARTIE 4 : Méthodes virtuelles pures (= 0)
+    virtual void afficher() = 0;
+    virtual double surface() = 0;
 
 protected:
-    string nom;
+    // Indispensable pour corriger l'erreur "nom n'est pas membre"
+    std::string nom;
 };
 
 #endif
