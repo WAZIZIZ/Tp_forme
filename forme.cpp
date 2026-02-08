@@ -6,24 +6,22 @@
 ///////////////////////////////////////////////////////////
 
 #include "forme.h"
+
+
 CForme::CForme() {
-    nom = "Inconnu";
+    this->nom = "Inconnu";
 }
 
+CForme::CForme(string _nom) {
+    this->nom = _nom;
+}
 
 CForme::~CForme() {
 }
 
-
-CForme::CForme(string _nom) {
-    nom = _nom;
-}
-
-
 void CForme::afficher() {
     cout << "Nom de la forme : " << nom << endl;
 }
-
 
 double CForme::surface() {
     return 0;

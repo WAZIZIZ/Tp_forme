@@ -5,26 +5,24 @@
 //  Original author: Enzo Mouny
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_C6A867D6_1E90_4f6f_9136_67255E5B0D6C__INCLUDED_)
-#define EA_C6A867D6_1E90_4f6f_9136_67255E5B0D6C__INCLUDED_
+#ifndef FORME_H
+#define FORME_H
 
 #include <string>
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
-class CForme
-{
+class CForme {
 public:
-	CForme();
-	~CForme(); 
+    CForme();               
+    CForme(string _nom);
+    virtual ~CForme();      
 
-	CForme(string _nom);
-	void afficher();
+    virtual void afficher();  
+    virtual double surface(); 
 
-	double surface(); 
-
-protected: 
-	string nom;
+protected:
+    string nom;
 };
 
-#endif // !defined(EA_C6A867D6_1E90_4f6f_9136_67255E5B0D6C__INCLUDED_)
+#endif
