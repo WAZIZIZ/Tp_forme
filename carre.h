@@ -17,12 +17,11 @@ public:
 	CCarre();
 	virtual ~CCarre();
 
-	
 	CCarre(std::string _nom, int _cote);
 
-	
 	void afficher() override;
-	double surface() override;
+
+	
 
 private:
 	int cote;

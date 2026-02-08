@@ -1,30 +1,30 @@
 #include <iostream>
 #include <vector>
+#include "forme.h"
 #include "rectangle.h"
 #include "carre.h"
-#include "triangle.h"
-#include "octogoneRegulier.h"
+
+using namespace std;
 
 int main() {
     
-    std::vector<CForme*> mesFormes;
+    vector<CForme*> mesFormes;
 
     
-    mesFormes.push_back(new CRectangle("Rect1", 10, 5));
-    mesFormes.push_back(new CCarre("Carre1", 4));
-    mesFormes.push_back(new CTriangle("Tri1", 3, 6));
-    mesFormes.push_back(new COctogoneRegulier("Octo1", 2));
+    mesFormes.push_back(new CRectangle("MonRectangle", 10, 5));
+    mesFormes.push_back(new CCarre("MonCarre", 4));
 
-    std::cout << "--- PARTIE 5 : POLYMORPHISME ---" << std::endl;
+    cout << "===== PARTIE 6 : HERITAGE INDIRECT (RECTANGLE & CARRE) =====" << endl;
 
    
     for (CForme* f : mesFormes) {
-        f->afficher(); 
-        std::cout << "Surface : " << f->surface() << std::endl;
-        std::cout << "---------------------------------" << std::endl;
+        f->afficher();
+        
+        cout << "Surface : " << f->surface() << endl;
+        cout << "---------------------------------" << endl;
     }
 
-   
+    
     for (CForme* f : mesFormes) {
         delete f;
     }
