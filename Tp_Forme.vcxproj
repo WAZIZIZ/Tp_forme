@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="carre.h" />
+    <ClInclude Include="cercle.h" />
     <ClInclude Include="forme.h" />
     <ClInclude Include="OctogoneRegulier.h" />
     <ClInclude Include="rectangle.h" />
@@ -135,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="carre.cpp" />
+    <ClCompile Include="cercle.cpp" />
     <ClCompile Include="forme.cpp" />
     <ClCompile Include="OctogoneRegulier.cpp" />
     <ClCompile Include="rectangle.cpp" />
