@@ -127,19 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\Nouveau dossier\carre.h" />
-    <ClInclude Include="..\Nouveau dossier\forme.h" />
-    <ClInclude Include="..\Nouveau dossier\OctogoneRegulier.h" />
-    <ClInclude Include="..\Nouveau dossier\rectangle.h" />
-    <ClInclude Include="..\Nouveau dossier\triangle.h" />
+    <ClInclude Include="carre.h" />
+    <ClInclude Include="forme.h" />
+    <ClInclude Include="OctogoneRegulier.h" />
+    <ClInclude Include="rectangle.h" />
+    <ClInclude Include="triangle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Nouveau dossier\carre.cpp" />
-    <ClCompile Include="..\Nouveau dossier\forme.cpp" />
-    <ClCompile Include="..\Nouveau dossier\OctogoneRegulier.cpp" />
-    <ClCompile Include="..\Nouveau dossier\rectangle.cpp" />
-    <ClCompile Include="..\Nouveau dossier\Test_Heritage_formes.cpp" />
-    <ClCompile Include="..\Nouveau dossier\triangle.cpp" />
+    <ClCompile Include="carre.cpp" />
+    <ClCompile Include="forme.cpp" />
+    <ClCompile Include="OctogoneRegulier.cpp" />
+    <ClCompile Include="rectangle.cpp" />
+    <ClCompile Include="Test_Heritage_formes.cpp" />
+    <ClCompile Include="triangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

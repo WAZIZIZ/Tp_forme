@@ -15,39 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Nouveau dossier\carre.h">
+    <ClInclude Include="carre.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\Nouveau dossier\forme.h">
+    <ClInclude Include="OctogoneRegulier.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\Nouveau dossier\OctogoneRegulier.h">
+    <ClInclude Include="rectangle.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\Nouveau dossier\rectangle.h">
+    <ClInclude Include="triangle.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\Nouveau dossier\triangle.h">
+    <ClInclude Include="forme.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Nouveau dossier\carre.cpp">
+    <ClCompile Include="carre.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\Nouveau dossier\forme.cpp">
+    <ClCompile Include="OctogoneRegulier.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\Nouveau dossier\OctogoneRegulier.cpp">
+    <ClCompile Include="rectangle.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\Nouveau dossier\rectangle.cpp">
+    <ClCompile Include="Test_Heritage_formes.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\Nouveau dossier\Test_Heritage_formes.cpp">
+    <ClCompile Include="triangle.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\Nouveau dossier\triangle.cpp">
+    <ClCompile Include="forme.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
